@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.message,.desktop{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    padding: 5%;
+    height: 100%;
+}
+main h1{
+    margin-bottom: 2%;
+}
+
+ul{
+    list-style-type: none;
+}
+ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2%;
+}
+ul li img{
+    padding: 3%;
+}
+.stayUpdated{
+    margin-bottom: 5%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    font-weight: bold;
+}
+form input {
+    padding: 5%;
+    border-radius: 8px;
+    border: none;
+}
+form input:first-of-type{
+    margin:1% 0 1% 0;
+    border: 1px solid black;
+}
+form  input:last-of-type{
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+}
+header img{
+    width: 100vw;
+    height: 35vh;
+    border-radius: 0 0 25px 25px;
+   }
+ 
+.message{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 5%;
+    height: 100%;
+    margin-top: 30%;
+}
+.message form{
+    margin-top: 40%;
+}
+.message h2{
+    margin: 4% 0 4% 0;
+}
+.message span{
+    font-weight: bold;
+}
+.message form input{
+    padding: 6% 4% 6% 4%;
+    width: 100%;
+}
+.message{
+    display: none;
+}
+.email-label{
+    display: flex;
+    justify-content:space-around ;
+    gap: 32%;
+    
+}
+.invalid{
+    color: hsl(4, 100%, 67%);
+    font-weight: bold;
+    opacity: 0;
+}
+.suscribe:active{
+    background-color: hsl(4, 100%, 67%);
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      background:  hsl(234, 29%, 20%);
+    }
+    .higher-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 2%;
+        height: 55vh;
+        max-width: 68vw;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+    }
+    main{
+        padding: 6% 3% 0% 3%;
+        
+    }
+    .stayUpdated{
+        margin: 0;
+    }
+
+    /* RECORDAR BORRAR*/
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .message{
+        max-height: 35vh;
+        max-width: 40vw;
+        margin: 0;
+        border-radius: 20px;
+        padding: 4% 4% 8% 6%;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .message form{
+        width: 80%;
+        height: 80%;
+        margin: 0;
+    }
+    .message:first-child{
+        margin: 0;
+    }
+    .submitBtn{
+        margin: 2% 0 6% 0;
+    }
+   
+
+}
